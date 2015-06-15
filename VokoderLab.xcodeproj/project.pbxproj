@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		8E5DD5DB1B2F291B001E85BD /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8E5DD5DC1B2F291B001E85BD /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				8E5DD5DF1B2F292F001E85BD /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		3AC249D60A3DCA03EB27871B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D530B170C1F1D5922025006E /* libPods.a */; };
 		3EBDE0A9C4C95AA7798559DE /* libPods-VokoderLabUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5607871DE79ADBA0F8964C /* libPods-VokoderLabUITests.a */; };
@@ -19,11 +33,13 @@
 		8E0BD0F51B20AE7A004FB98C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0BD0F31B20AE7A004FB98C /* LaunchScreen.xib */; };
 		8E0BD1011B20AE7B004FB98C /* VokoderLabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD1001B20AE7B004FB98C /* VokoderLabTests.m */; };
 		8E0BD10D1B20AE7B004FB98C /* VokoderLabUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD10C1B20AE7B004FB98C /* VokoderLabUITests.m */; };
-		8E0BD11D1B20B1D3004FB98C /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD11A1B20B1D3004FB98C /* Task.m */; };
-		8E0BD11E1B20B1D3004FB98C /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD11C1B20B1D3004FB98C /* List.m */; };
 		8E0BD1211B20B56D004FB98C /* VOKTasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD1201B20B56D004FB98C /* VOKTasksTableViewController.m */; };
 		8E0BD1241B20B594004FB98C /* VOKNewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD1231B20B594004FB98C /* VOKNewTaskViewController.m */; };
 		8E0BD12A1B20BA2F004FB98C /* VOKFetchedResultsDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD1291B20BA2F004FB98C /* VOKFetchedResultsDS.m */; };
+		8E5DD5E51B2F3041001E85BD /* _List.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DD5E21B2F3041001E85BD /* _List.m */; };
+		8E5DD5E61B2F3041001E85BD /* _Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DD5E41B2F3041001E85BD /* _Task.m */; };
+		8E5DD5EB1B2F3055001E85BD /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DD5E81B2F3055001E85BD /* List.m */; };
+		8E5DD5EC1B2F3055001E85BD /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DD5EA1B2F3055001E85BD /* Task.m */; };
 		B042173A70D077439BC4F8DF /* libPods-VokoderLabTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B411CD3ABF1FCC18D1C740 /* libPods-VokoderLabTests.a */; };
 /* End PBXBuildFile section */
 
@@ -79,16 +95,20 @@
 		8E0BD1061B20AE7B004FB98C /* VokoderLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VokoderLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0BD10B1B20AE7B004FB98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E0BD10C1B20AE7B004FB98C /* VokoderLabUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VokoderLabUITests.m; sourceTree = "<group>"; };
-		8E0BD1191B20B1D3004FB98C /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
-		8E0BD11A1B20B1D3004FB98C /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
-		8E0BD11B1B20B1D3004FB98C /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
-		8E0BD11C1B20B1D3004FB98C /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
 		8E0BD11F1B20B56D004FB98C /* VOKTasksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VOKTasksTableViewController.h; path = ../VOKTasksTableViewController.h; sourceTree = "<group>"; };
 		8E0BD1201B20B56D004FB98C /* VOKTasksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VOKTasksTableViewController.m; path = ../VOKTasksTableViewController.m; sourceTree = "<group>"; };
 		8E0BD1221B20B594004FB98C /* VOKNewTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOKNewTaskViewController.h; sourceTree = "<group>"; };
 		8E0BD1231B20B594004FB98C /* VOKNewTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOKNewTaskViewController.m; sourceTree = "<group>"; };
 		8E0BD1281B20BA2F004FB98C /* VOKFetchedResultsDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOKFetchedResultsDS.h; sourceTree = "<group>"; };
 		8E0BD1291B20BA2F004FB98C /* VOKFetchedResultsDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOKFetchedResultsDS.m; sourceTree = "<group>"; };
+		8E5DD5E11B2F3041001E85BD /* _List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _List.h; sourceTree = "<group>"; };
+		8E5DD5E21B2F3041001E85BD /* _List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _List.m; sourceTree = "<group>"; };
+		8E5DD5E31B2F3041001E85BD /* _Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Task.h; sourceTree = "<group>"; };
+		8E5DD5E41B2F3041001E85BD /* _Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Task.m; sourceTree = "<group>"; };
+		8E5DD5E71B2F3055001E85BD /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = List.h; path = CoreDataAndModels/List.h; sourceTree = "<group>"; };
+		8E5DD5E81B2F3055001E85BD /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = List.m; path = CoreDataAndModels/List.m; sourceTree = "<group>"; };
+		8E5DD5E91B2F3055001E85BD /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Task.h; path = CoreDataAndModels/Task.h; sourceTree = "<group>"; };
+		8E5DD5EA1B2F3055001E85BD /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Task.m; path = CoreDataAndModels/Task.m; sourceTree = "<group>"; };
 		A3338BF7F088841A6B8B0629 /* Pods-VokoderLabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VokoderLabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VokoderLabTests/Pods-VokoderLabTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5FBD4FE6FEDBA4D07823A13 /* Pods-VokoderLabUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VokoderLabUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VokoderLabUITests/Pods-VokoderLabUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BBDA42DA78072213B28AB7D4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -263,10 +283,11 @@
 		8E0BD0E71B20AE7A004FB98C /* CoreDataAndModels */ = {
 			isa = PBXGroup;
 			children = (
-				8E0BD1191B20B1D3004FB98C /* Task.h */,
-				8E0BD11A1B20B1D3004FB98C /* Task.m */,
-				8E0BD11B1B20B1D3004FB98C /* List.h */,
-				8E0BD11C1B20B1D3004FB98C /* List.m */,
+				8E5DD5E71B2F3055001E85BD /* List.h */,
+				8E5DD5E81B2F3055001E85BD /* List.m */,
+				8E5DD5E91B2F3055001E85BD /* Task.h */,
+				8E5DD5EA1B2F3055001E85BD /* Task.m */,
+				8E5DD5E01B2F3041001E85BD /* Robot */,
 				8E0BD0EB1B20AE7A004FB98C /* VOKCoreDataUtility.h */,
 				8E0BD0EC1B20AE7A004FB98C /* VOKCoreDataUtility.m */,
 				8E0BD0E81B20AE7A004FB98C /* VokoderLab.xcdatamodeld */,
@@ -306,6 +327,18 @@
 				8E0BD10B1B20AE7B004FB98C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E5DD5E01B2F3041001E85BD /* Robot */ = {
+			isa = PBXGroup;
+			children = (
+				8E5DD5E11B2F3041001E85BD /* _List.h */,
+				8E5DD5E21B2F3041001E85BD /* _List.m */,
+				8E5DD5E31B2F3041001E85BD /* _Task.h */,
+				8E5DD5E41B2F3041001E85BD /* _Task.m */,
+			);
+			name = Robot;
+			path = CoreDataAndModels/Robot;
 			sourceTree = "<group>";
 		};
 		E2C47BB375E9080008D313F1 /* Frameworks */ = {
@@ -417,6 +450,9 @@
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 8E0BD0C51B20AE7A004FB98C;
 					};
+					8E5DD5DB1B2F291B001E85BD = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 8E0BD0BE1B20AE7A004FB98C /* Build configuration list for PBXProject "VokoderLab" */;
@@ -435,6 +471,7 @@
 				8E0BD0C51B20AE7A004FB98C /* VokoderLab */,
 				8E0BD0F91B20AE7B004FB98C /* VokoderLabTests */,
 				8E0BD1051B20AE7B004FB98C /* VokoderLabUITests */,
+				8E5DD5DB1B2F291B001E85BD /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -555,6 +592,19 @@
 			shellPath = /bin/sh;
 			shellScript = Pods/XcodeCoverage/exportenv.sh;
 		};
+		8E5DD5DF1B2F292F001E85BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/mogenerator --v2 -m VokoderLab/CoreDataAndModels/VokoderLab.xcdatamodeld --machine-dir VokoderLab/CoreDataAndModels/Robot --human-dir VokoderLab/CoreDataAndModels";
+		};
 		A785112F95B46F946BD26FA4 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -607,13 +657,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0BD11D1B20B1D3004FB98C /* Task.m in Sources */,
 				8E0BD1241B20B594004FB98C /* VOKNewTaskViewController.m in Sources */,
 				8E0BD0EA1B20AE7A004FB98C /* VokoderLab.xcdatamodeld in Sources */,
 				8E0BD12A1B20BA2F004FB98C /* VOKFetchedResultsDS.m in Sources */,
+				8E5DD5EC1B2F3055001E85BD /* Task.m in Sources */,
+				8E5DD5E61B2F3041001E85BD /* _Task.m in Sources */,
 				8E0BD0CF1B20AE7A004FB98C /* AppDelegate.m in Sources */,
-				8E0BD11E1B20B1D3004FB98C /* List.m in Sources */,
+				8E5DD5EB1B2F3055001E85BD /* List.m in Sources */,
 				8E0BD1211B20B56D004FB98C /* VOKTasksTableViewController.m in Sources */,
+				8E5DD5E51B2F3041001E85BD /* _List.m in Sources */,
 				8E0BD0ED1B20AE7A004FB98C /* VOKCoreDataUtility.m in Sources */,
 				8E0BD0CC1B20AE7A004FB98C /* main.m in Sources */,
 			);
@@ -850,6 +902,20 @@
 			};
 			name = Release;
 		};
+		8E5DD5DD1B2F291B001E85BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E5DD5DE1B2F291B001E85BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -888,6 +954,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8E5DD5DC1B2F291B001E85BD /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E5DD5DD1B2F291B001E85BD /* Debug */,
+				8E5DD5DE1B2F291B001E85BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

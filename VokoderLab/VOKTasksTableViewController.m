@@ -23,13 +23,7 @@
     [super viewDidLoad];
     
     NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES];
-    
-//    self.dataSource = [[VOKFetchedResultsDataSource alloc] initWithPredicate:nil
-//                                                                   cacheName:nil
-//                                                                   tableView:self.tableView
-//                                                          sectionNameKeyPath:nil
-//                                                             sortDescriptors:@[sortDescriptor]
-//                                                          managedObjectClass:[Task class]];
+
     self.dataSource = [[VOKFetchedResultsDS alloc] initWithPredicate:nil
                                                            cacheName:nil
                                                            tableView:self.tableView
@@ -52,20 +46,6 @@
     } else {
         object.completed = YES;
     }
-    
-
 }
-
-#pragma mark - Table view data source
-
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//    return 1;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    return self.dataSource.c;
-//}
 
 @end
