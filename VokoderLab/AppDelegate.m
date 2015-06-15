@@ -7,12 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "VOKCoreDataUtility.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //TODO: Override point for customization after application launch.
+    // Setup the data model
+    [VOKCoreDataUtility setupCoreData];
+    
     return YES;
 }
 

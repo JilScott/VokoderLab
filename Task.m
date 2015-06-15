@@ -9,7 +9,6 @@
 #import "Task.h"
 #import "List.h"
 
-
 @implementation Task
 
 @dynamic title;

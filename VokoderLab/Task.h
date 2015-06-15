@@ -13,9 +13,9 @@
 
 @interface Task : NSManagedObject
 
-@property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSDate * createdDate;
-@property (nonatomic, retain) NSNumber * completed;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSDate *createdDate;
+@property (nonatomic) Boolean completed;
 @property (nonatomic, retain) List *list;
 
 @end

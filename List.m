@@ -9,7 +9,6 @@
 #import "List.h"
 #import "NSManagedObject.h"
 
-
 @implementation List
 
 @dynamic title;

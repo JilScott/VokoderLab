@@ -21,6 +21,9 @@
 		8E0BD10D1B20AE7B004FB98C /* VokoderLabUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD10C1B20AE7B004FB98C /* VokoderLabUITests.m */; };
 		8E0BD11D1B20B1D3004FB98C /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD11A1B20B1D3004FB98C /* Task.m */; };
 		8E0BD11E1B20B1D3004FB98C /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD11C1B20B1D3004FB98C /* List.m */; };
+		8E0BD1211B20B56D004FB98C /* VOKTasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD1201B20B56D004FB98C /* VOKTasksTableViewController.m */; };
+		8E0BD1241B20B594004FB98C /* VOKNewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD1231B20B594004FB98C /* VOKNewTaskViewController.m */; };
+		8E0BD12A1B20BA2F004FB98C /* VOKFetchedResultsDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BD1291B20BA2F004FB98C /* VOKFetchedResultsDS.m */; };
 		B042173A70D077439BC4F8DF /* libPods-VokoderLabTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B411CD3ABF1FCC18D1C740 /* libPods-VokoderLabTests.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +83,12 @@
 		8E0BD11A1B20B1D3004FB98C /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		8E0BD11B1B20B1D3004FB98C /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		8E0BD11C1B20B1D3004FB98C /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		8E0BD11F1B20B56D004FB98C /* VOKTasksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VOKTasksTableViewController.h; path = ../VOKTasksTableViewController.h; sourceTree = "<group>"; };
+		8E0BD1201B20B56D004FB98C /* VOKTasksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VOKTasksTableViewController.m; path = ../VOKTasksTableViewController.m; sourceTree = "<group>"; };
+		8E0BD1221B20B594004FB98C /* VOKNewTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOKNewTaskViewController.h; sourceTree = "<group>"; };
+		8E0BD1231B20B594004FB98C /* VOKNewTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOKNewTaskViewController.m; sourceTree = "<group>"; };
+		8E0BD1281B20BA2F004FB98C /* VOKFetchedResultsDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOKFetchedResultsDS.h; sourceTree = "<group>"; };
+		8E0BD1291B20BA2F004FB98C /* VOKFetchedResultsDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOKFetchedResultsDS.m; sourceTree = "<group>"; };
 		A3338BF7F088841A6B8B0629 /* Pods-VokoderLabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VokoderLabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VokoderLabTests/Pods-VokoderLabTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5FBD4FE6FEDBA4D07823A13 /* Pods-VokoderLabUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VokoderLabUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VokoderLabUITests/Pods-VokoderLabUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BBDA42DA78072213B28AB7D4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -220,6 +229,8 @@
 		8E0BD0E21B20AE7A004FB98C /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8E0BD1281B20BA2F004FB98C /* VOKFetchedResultsDS.h */,
+				8E0BD1291B20BA2F004FB98C /* VOKFetchedResultsDS.m */,
 			);
 			path = "Data Sources";
 			sourceTree = "<group>";
@@ -234,6 +245,10 @@
 		8E0BD0E41B20AE7A004FB98C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8E0BD11F1B20B56D004FB98C /* VOKTasksTableViewController.h */,
+				8E0BD1201B20B56D004FB98C /* VOKTasksTableViewController.m */,
+				8E0BD1221B20B594004FB98C /* VOKNewTaskViewController.h */,
+				8E0BD1231B20B594004FB98C /* VOKNewTaskViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -593,9 +608,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0BD11D1B20B1D3004FB98C /* Task.m in Sources */,
+				8E0BD1241B20B594004FB98C /* VOKNewTaskViewController.m in Sources */,
 				8E0BD0EA1B20AE7A004FB98C /* VokoderLab.xcdatamodeld in Sources */,
+				8E0BD12A1B20BA2F004FB98C /* VOKFetchedResultsDS.m in Sources */,
 				8E0BD0CF1B20AE7A004FB98C /* AppDelegate.m in Sources */,
 				8E0BD11E1B20B1D3004FB98C /* List.m in Sources */,
+				8E0BD1211B20B56D004FB98C /* VOKTasksTableViewController.m in Sources */,
 				8E0BD0ED1B20AE7A004FB98C /* VOKCoreDataUtility.m in Sources */,
 				8E0BD0CC1B20AE7A004FB98C /* main.m in Sources */,
 			);

@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Task.h"
 
 @class NSManagedObject;
 
 @interface List : NSManagedObject
 
-@property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSManagedObject *task;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) Task *task;
 
 @end

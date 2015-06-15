@@ -13,7 +13,7 @@
 
 @interface List : NSManagedObject
 
-@property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) NSString *title;
 @property (nonatomic, retain) NSManagedObject *task;
 
 @end
